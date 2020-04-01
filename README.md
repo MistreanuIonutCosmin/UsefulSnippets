@@ -1,7 +1,7 @@
 # UsefulSnippets
 
 ## Pytorch Snippets
-[Pytorch](./pytorch/READNE.md)
+[Pytorch](./pytorch/README.md)
 
 ## Bash
 
