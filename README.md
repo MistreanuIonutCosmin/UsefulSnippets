@@ -1,5 +1,8 @@
 # UsefulSnippets
 
+## Pytorch Snippets
+[Pytorch](./pytorch/READNE.md)
+
 ## Bash
 
 ```bash
