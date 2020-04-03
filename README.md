@@ -20,6 +20,7 @@ find ./ -type d -empty -delete
 ```python
 ### 1. Find the closest face pose from a video compared to a given image wiht a face
 
+from scipy.spatial import ConvexHull
 def find_best_frame(source, driving, cpu=False):
     import face_alignment
 
