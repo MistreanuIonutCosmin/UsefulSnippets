@@ -12,7 +12,15 @@ find ./ -type d -empty
 
 find ./ -type f -size 0 -delete
 find ./ -type d -empty -delete
+```
 
+## FFMEG
+### 1. vertically and horizonally stacking
+https://stackoverflow.com/questions/11552565/vertically-or-horizontally-stack-mosaic-several-videos-using-ffmpeg
+Only video:
+```bash
+ffmpeg -i input0 -i input1 -filter_complex vstack=inputs=2 output
+ffmpeg -i input0 -i input1 -filter_complex hstack=inputs=2 output
 ```
 
 ## Python
