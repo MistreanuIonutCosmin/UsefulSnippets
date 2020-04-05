@@ -14,6 +14,17 @@ find ./ -type f -size 0 -delete
 find ./ -type d -empty -delete
 ```
 
+
+## Jupyter
+### 1. Autoreload
+```bash
+%load_ext autoreload
+%autorelaod 2
+%pylab inline
+import sys
+# sys.path.append('')
+```
+
 ## FFMEG
 ### 1. vertically and horizonally stacking
 https://stackoverflow.com/questions/11552565/vertically-or-horizontally-stack-mosaic-several-videos-using-ffmpeg
