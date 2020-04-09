@@ -96,4 +96,24 @@ func(*('one', 'two', 'three'))
 # one
 # two
 # three
+
+# When specifying a dictionary (dict) with ** as an argument, key will be expanded as an argument name and value as the value of the argument. Each element will be passed as keyword arguments.
+
+def func(arg1, arg2, arg3):
+    print(arg1)
+    print(arg2)
+    print(arg3)
+
+d = {'arg1': 'one', 'arg2': 'two', 'arg3': 'three'}
+
+func(**d)
+# one
+# two
+# three
+
+func(**{'arg1': 'one', 'arg2': 'two', 'arg3': 'three'})
+# one
+# two
+# three
+
 ```
