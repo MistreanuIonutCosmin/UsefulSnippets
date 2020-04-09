@@ -66,3 +66,34 @@ def find_best_frame(source, driving, cpu=False):
     return frame_num
 ```
 
+### 2. Parameter expansion
+```python
+def func(arg1, arg2, arg3):
+    print(arg1)
+    print(arg2)
+    print(arg3)
+
+l = ['one', 'two', 'three']
+
+func(*l)
+# one
+# two
+# three
+
+func(*['one', 'two', 'three'])
+# one
+# two
+# three
+
+t = ('one', 'two', 'three')
+
+func(*t)
+# one
+# two
+# three
+
+func(*('one', 'two', 'three'))
+# one
+# two
+# three
+```
