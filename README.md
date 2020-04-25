@@ -1,7 +1,7 @@
 # UsefulSnippets
 
 ## Nvidia
-[Nvidia](./pytorch/README.md)
+[Nvidia](./nvidia/README.md)
 
 
 ## Pytorch Snippets
