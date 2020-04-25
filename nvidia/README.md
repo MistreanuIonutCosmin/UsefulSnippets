@@ -37,3 +37,10 @@ sudo modprobe -r nvidia
 sudo modprobe nvidia
 
 sudo service lightdm start
+
+
+## Nvidia-Docker
+
+! Only the driver must be installed on the host. The CUDA version from the container must be compatible with the host driver.
+
+sudo apt-get install nvidia-container-toolkit
