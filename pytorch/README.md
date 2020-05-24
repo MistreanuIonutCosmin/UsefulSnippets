@@ -3,6 +3,19 @@
 ## nn.ModuleList
 ```
 """
+torch.reshape() or torch.view() # same behaviour, reshape works every time
+torch.squeeze(dim=) # remove a dimension
+torch.unsqueeze(dim=) # add a dimension
+t.data.cpu().numpy() # no need to call t.detach() if we use .data property
+t.repeat(4,1,1) # stacking the tensor t 4 times vertically
+torch.cat(t1,t2)
+
+"""
+```
+
+## nn.ModuleList
+```
+"""
 nn.ModuleList is just like a Python list. It was designed to store any desired number of nn.Module’s. 
 It may be useful, for instance, if you want to design a neural network whose number of layers is passed as input:
 """
