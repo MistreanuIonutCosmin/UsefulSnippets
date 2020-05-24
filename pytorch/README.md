@@ -1,6 +1,6 @@
 # Pytorch
 
-## nn.ModuleList
+## Useful Functions
 ```
 """
 torch.reshape() or torch.view() # same behaviour, reshape works every time
