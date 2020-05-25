@@ -142,3 +142,13 @@ func(**{'arg1': 'one', 'arg2': 'two', 'arg3': 'three'})
 # three
 
 ```
+
+
+## Git
+
+```
+### Rebase // copy new commits from one branch to another 
+(master) git rebase developement
+
+```
+
