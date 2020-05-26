@@ -9,7 +9,7 @@ torch.unsqueeze(dim=) # add a dimension
 t.data.cpu().numpy() # no need to call t.detach() if we use .data property
 t.repeat(4,1,1) # stacking the tensor t 4 times vertically
 torch.cat(t1,t2)
-
+torch.masked_select(input, mask, out=None) → Tensor
 """
 ```
 
