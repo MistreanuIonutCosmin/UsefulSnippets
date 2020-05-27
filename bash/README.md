@@ -24,5 +24,5 @@ nano /etc/fstab
 /dev/sdb     /mnt/sdb      ext4        defaults      0       0
 
 ! Change partition permission
-sudo chown root:<user> /mnt/sdb -R
+sudo chown <user>:<group> /mnt/sdb -R
 ```
