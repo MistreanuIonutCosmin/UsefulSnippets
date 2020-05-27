@@ -11,7 +11,7 @@
 [Pytorch](./pytorch/README.md)
 
 ## Bash
-[Pytorch](./bash/README.md)
+[Bash](./bash/README.md)
 
 
 ## Jupyter
