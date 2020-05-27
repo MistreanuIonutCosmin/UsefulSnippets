@@ -6,8 +6,8 @@ find ./ -type d -empty
 find ./ -type f -size 0 -delete
 find ./ -type d -empty -delete
 
-### 2. Mounting a new hdd
-https://medium.com/@sh.tsang/partitioning-formatting-and-mounting-a-hard-drive-in-linux-ubuntu-18-04-324b7634d1e0
+### 2. [Mounting a new hdd](https://medium.com/@sh.tsang/partitioning-formatting-and-mounting-a-hard-drive-in-linux-ubuntu-18-04-324b7634d1e0)
+
 sudo fdisk -l
 sudo parted /dev/sdb <- if this is the new hdd installed
 (parted) mklabel gpt
