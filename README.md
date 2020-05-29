@@ -139,8 +139,17 @@ func(**{'arg1': 'one', 'arg2': 'two', 'arg3': 'three'})
 ## Git
 
 ```
+### Revion - a tracked state of project. Every revion has it's own sha-1 hash
+
 ### Rebase // copy new commits from one branch to another 
 (master) git rebase developement
 
+### Lightweight tag // a user friendly name pointer to a commit 
+git tag awesome_tag_name
+
+(master) git rebase developement
+
+### Remotes 
+There is nothing special about remotes. Same revisions, with their own unique hashes are stored in your local git repository when you fetch changes. References to remote branches are automatically created, based on name of remote branch, and prepended with the name of remote.
 ```
 
