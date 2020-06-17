@@ -26,3 +26,5 @@ nano /etc/fstab
 ! Change partition permission
 sudo chown <user>:<group> /mnt/sdb -R
 ```
+### 3. connecting via ssh using public/private key
+cat ~/.ssh/id_rsa.pub | ssh <user>@<hostname> 'cat >> .ssh/authorized_keys && echo "Key copied"'
