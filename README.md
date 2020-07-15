@@ -31,6 +31,8 @@ Only video:
 ```bash
 ffmpeg -i input0 -i input1 -filter_complex vstack=inputs=2 output
 ffmpeg -i input0 -i input1 -filter_complex hstack=inputs=2 output
+ffmpeg -i LostInTranslation.mkv -codec copy LostInTranslation.mp4
+ffmpeg -i video.mp4 img%04.png // split in frames with lossless convertion 
 ```
 
 ## Python
