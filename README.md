@@ -33,6 +33,13 @@ ffmpeg -i input0 -i input1 -filter_complex vstack=inputs=2 output
 ffmpeg -i input0 -i input1 -filter_complex hstack=inputs=2 output
 ffmpeg -i LostInTranslation.mkv -codec copy LostInTranslation.mp4
 ffmpeg -i video.mp4 img%04.png // split in frames with lossless convertion 
+
+ffmpeg -i Video.mp4 -filter_complex \
+"[0:v]trim=start=0:end=20,setpts=PTS-STARTPTS[a]; \
+ [0:v]trim=start=27:end=90,setpts=PTS-STARTPTS[b]; \
+ [0:v]trim=start=95:end=169,setpts=PTS-STARTPTS[c]; \
+ [a][b][c]concat=n=3[out1]" -map [out1] VideoTrimed.mp4
+ 
 ```
 
 ## Python
