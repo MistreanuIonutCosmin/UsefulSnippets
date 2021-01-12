@@ -44,3 +44,7 @@ sudo service lightdm start
 ! Only the driver must be installed on the host. The CUDA version from the container must be compatible with the host driver.
 
 sudo apt-get install nvidia-container-toolkit
+
+### Error nvidia-docker
+sudo systemctl daemon-reload
+sudo systemctl restart docker
