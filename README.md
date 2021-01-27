@@ -41,7 +41,10 @@ ffmpeg -i Video.mp4 -filter_complex \
  [0:v]trim=start=27:end=90,setpts=PTS-STARTPTS[b]; \
  [0:v]trim=start=95:end=169,setpts=PTS-STARTPTS[c]; \
  [a][b][c]concat=n=3[out1]" -map [out1] VideoTrimed.mp4
- 
+
+##2. great gif from mp4
+ffmpeg -ss 30 -t 3 -i input.mp4 -vf "fps=10,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 output.gif
+
 ```
 
 ## Python
